@@ -1,0 +1,30 @@
+mat-toolbar{
+    background-color: blueviolet;
+    width: 100%;
+}
+mat-toolbar span{
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+mat-toolbar ul{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+}
+mat-toolbar ul li{
+    list-style-type: none;
+}
+mat-toolbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+}
+
+.menu-button{
+    float: right;
+}
+
+mat-icon{
+    color: white;
+}

@@ -1,0 +1,30 @@
+.container{
+    background-color: blueviolet;
+    width: 70%;
+    height: 100%;
+    margin: auto;
+}
+
+form{
+    width: 60%;
+    height: 60%;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px #1d0633;
+} 
+
+mat-form-field{
+    width: 100%;
+    margin: auto;
+    border-width: 5px;
+}
+button{
+    margin-top: 10px;
+}
+h1, h2{
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+}

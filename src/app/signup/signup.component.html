@@ -1,0 +1,54 @@
+<div class="container">
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="header" fxLayout="column"
+    fxLayoutAlign="center center"
+    fxLayoutGap="20px">
+        <h1>Welcome to Pi Diary</h1>
+        <h2>Create your account here</h2>
+    </div>
+    <form [formGroup]="userService.signupForm"
+    fxLayout="column"
+    fxLayoutAlign="center center"
+    fxlayoutGap="10px">
+            <input 
+            type="hidden"
+            formControlName="$key"
+        >
+        <mat-form-field>
+            <input 
+                matInput
+                type="text"
+                formControlName="fullName"
+                placeholder="John Doe"
+            >
+            <mat-error *ngIf="userService.signupForm.get('fullName')?.invalid">Name is not valid</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+            <input 
+                matInput
+                type="text"
+                formControlName="email"
+                placeholder="johndoe@gmail.com"
+            >
+            <mat-error *ngIf="userService.signupForm.get('email')?.dirty && 
+            userService.loginForm.get('email')?.touched">You must enter an email</mat-error>
+            <mat-error *ngIf="userService.signupForm.get('email')?.invalid">Email is not valid</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+            <input 
+                matInput
+                type="password"
+                formControlName="password"
+                placeholder="password"
+            >
+            <mat-error *ngIf="userService.signupForm.get('password')?.dirty && 
+            userService.loginForm.get('password')?.touched">You must enter the correct password</mat-error>
+            <mat-error *ngIf="userService.loginForm.get('password')?.invalid">password must be at least 8 characters long</mat-error>
+        </mat-form-field>
+        <button mat-raised-button color="primary" [disabled]="userService.signupForm.invalid">Signup</button>
+        <button mat-raised-button color="primary" routerLink="/login">Login Instead?</button>
+    </form>
+</div>
