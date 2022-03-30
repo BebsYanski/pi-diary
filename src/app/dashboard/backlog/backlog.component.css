@@ -1,0 +1,20 @@
+/* .container{
+    width: 100%;
+} */
+mat-sidenav{
+    height: 100vh;
+    background-color: blueviolet;
+    width: 150px;
+    font-family: sans-serif;
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+}
+
+mat-sidenav-content{
+    margin: auto;
+    background-color: white;
+}
+mat-sidenav-content:hover{
+    font-size: 24px;
+}

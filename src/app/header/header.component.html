@@ -8,15 +8,18 @@
         <ul fxLayout="row"
         fxLayoutGap="10"
         fxLayoutAlign="center">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Settings</a></li>
+            <li><a routerLink="/dashboard/home">Home</a></li>
+            <li><a routeLink="/dashboard/backlog">BackLog</a></li>
+            <li><a routerLink="/dashboard/profile">Profile</a></li>
+            <li><a routerLink="/dashboard/about">About</a></li>
         </ul>
         <div class="menu-button"
         fxFlexAlign="end center">
             <button mat-button>
                 <mat-icon>menu</mat-icon>
+            </button>
+            <button (click)="emitState()" mat-button color="primary" fxFlexAlign="start center">
+                <mat-icon>exit_to_app</mat-icon>
             </button>
         </div>
     </mat-toolbar>

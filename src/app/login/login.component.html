@@ -39,7 +39,7 @@
             userService.loginForm.get('password')?.touched">You must enter the correct password</mat-error>
             <mat-error *ngIf="userService.loginForm.get('password')?.invalid">password must be at least 8 characters long</mat-error>
         </mat-form-field>
-        <button mat-raised-button color="primary" [disabled]="userService.loginForm.invalid">Login</button>
+        <button mat-raised-button color="primary" [disabled]="userService.loginForm.invalid" routerLink="/dashboard">Login</button>
         <button mat-raised-button color="primary" routerLink="/signup">Signup Instead?</button>
     </form>
 </div>

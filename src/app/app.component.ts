@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'pi-diary';
+
+  opened: boolean = true;
+
+  emitState(){
+    console.log(this.opened)
+  }
 }

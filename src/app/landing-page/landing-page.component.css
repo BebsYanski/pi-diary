@@ -1,0 +1,23 @@
+.container{
+    width: 90%;
+    background: rgb(252, 246, 246);
+    margin: auto;
+}
+
+.header{
+    text-align: center;
+}
+.header button{
+    margin-left: 15px;
+    width: 115px;
+    height: 45px;
+}
+.header button:hover{
+    width: 150px;
+    height: 50px;
+    box-shadow: 2px 2px blueviolet;
+}
+
+.develop h1{
+    color: blueviolet;
+}

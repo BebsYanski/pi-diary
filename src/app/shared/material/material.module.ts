@@ -5,6 +5,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 
 const MaterialElements = [
@@ -13,7 +14,8 @@ const MaterialElements = [
   MatIconModule,
   MatFormFieldModule,
   MatToolbarModule,
-  MatGridListModule
+  MatGridListModule,
+  MatSidenavModule
 ]
 
 
